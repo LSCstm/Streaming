@@ -15,12 +15,12 @@
 
 ## Overview
 
-Trinix Free-Streaming pairs a minimal Flask backend with HTML templates to deliver an always up-to-date catalog of movies and television shows. The service queries TMDB for trending, upcoming, and searched titles, verifies that each item can be streamed, and renders the results in a clean, responsive interface.
+Streaming pairs a minimal Flask backend with HTML templates to deliver an always up-to-date catalog of movies and television shows. The service queries TMDB for trending, upcoming, and searched titles, verifies that each item can be streamed, and renders the results in a clean, responsive interface.
 
 The project was designed to complement the Trinix Discord bot but also works as a standalone web application you can host for friends or personal use.
 
 > **Disclaimer**
-> Trinix Free-Streaming simply aggregates publicly available links. You are responsible for complying with local laws and the terms of service of the content providers you access through this project.
+> Streaming simply aggregates publicly available links. You are responsible for complying with local laws and the terms of service of the content providers you access through this project.
 
 ## Features
 
@@ -109,7 +109,7 @@ On Linux servers that use systemd, you can run the application as a managed serv
    Create `/etc/systemd/system/trinix.service` with the following contents:
    ```ini
    [Unit]
-   Description=Trinix Free-Streaming service
+   Description=Streaming service
    After=network-online.target
    Wants=network-online.target
 
